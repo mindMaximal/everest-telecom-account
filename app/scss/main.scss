@@ -307,6 +307,10 @@ h1, h2, h3, h4, h5, p {
 
 .color {
 
+	&-black {
+		color: $text;
+	}
+
 	&-red {
 		color: $btn;
 	}
@@ -751,6 +755,36 @@ object, img {
 
 	&-grey {
 		background-color: #F7F8FF;
+
+		.form {
+				
+			&__checkbox {
+				position: relative;
+		
+				&:before {
+					border: 1px solid #DEE2FF;
+					background-color: #ffffff;
+				}
+		
+				&:after {
+					content: url('../img/tick.svg');
+					position: absolute;
+					opacity: 0;
+					transform: translateX(-35%) translateY(-65%);
+					left: 50%;
+					top: 50%;
+					width: 14px;
+					height: 15px;
+				}
+		
+				&:checked {
+		
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+		}
 	}
 
 	&-tv {
@@ -1127,6 +1161,41 @@ object, img {
 
 	}
 	
+}
+
+
+.auth {
+
+	&__form {
+		padding: 25px;
+	}
+
+	&__subtitle {
+		display: inline-block;
+		width: 130px;
+	}
+
+	&__remember {
+		margin-left: 135px;
+		margin-bottom: 37px;
+	}
+
+	&__checkbox {
+		margin-left: 0;
+	}
+
+	&__button {
+		margin-left: 135px;
+		padding: 18px 40px;
+
+		&:before {
+			left: 20px;
+		}
+	}
+
+	&__link {
+		margin-left: 20px;
+	}
 }
 
 @import "media"; // Always at the end
