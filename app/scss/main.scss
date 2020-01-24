@@ -359,6 +359,11 @@ object, img {
 		background-color: $bgc;
 		color: #ffffff;
 	}
+
+	&-eror {
+		background-color: #404EF5;
+		color: #ffffff;
+	}
 }
 
 .menu {
@@ -817,6 +822,12 @@ object, img {
 		top: 3px;
 		transform: translateX(-100%);
 	}
+
+	&--red {
+		width: 100%;
+		height: 24px;
+		background-color: $btn;
+	}
 }
 
 .footer {
@@ -1194,6 +1205,55 @@ object, img {
 	}
 
 	&__link {
+		margin-left: 20px;
+	}
+}
+
+.eror {
+	background-color: #404EF5;
+	background-repeat: no-repeat;
+	background-image: url('../img/background-eror.jpg');
+	background-size: 100%;
+	background-position: 100% 100%;
+
+	&__title {
+		font-size: 3.375em;
+		margin-bottom: 70px;
+	}
+
+	&__text {
+		font-size: 7.5em;
+		margin-right: 30px;
+	}
+
+	&__link {
+		margin-top: 90px;
+	}
+}
+
+.loader {
+
+	&__wrapper {
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		background-color: #404EF5;
+		background-repeat: no-repeat;
+		background-image: url('../img/background-eror.jpg');
+		background-size: contain;
+		background-position: 100% 0;
+		padding-left: 20%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__text {
+		line-height: 1.1;
+		font-size: 1.375em;
+		margin-top: 22px;
 		margin-left: 20px;
 	}
 }

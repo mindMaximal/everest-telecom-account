@@ -349,6 +349,38 @@
             margin-top: 10px;
         }
     }
+
+    .eror {
+        background-size: cover;
+        background-position: 70% 100%;
+    
+        &__title {
+            font-size: 2.75em;
+            margin-bottom: 46px;
+        }
+    
+        &__text {
+            font-size: 6.25em;
+            margin-right: 15px;
+        }
+    
+        &__link {
+            margin-top: 55px;
+            margin-bottom: 70px;
+        }
+    }
+
+    .loader {
+
+        &__wrapper {
+            padding-left: 15%;
+        }
+    
+        &__text {
+            font-size: 1.25em;
+        }
+    }
+    
 }
 
 // ≥768px
@@ -802,6 +834,56 @@
 
         &__link {
             max-width: 120px;
+        }
+    }
+
+    .eror {
+        background-size: 100%;
+        background-position: 100% 0%;
+        background-image: url('../img/background-eror-small.png');
+        text-align: center;
+    
+        &__title {
+            font-size: 2.8em;
+            margin-bottom: 35px;
+            text-align: left;
+            line-height: 1.1;
+        }
+
+        &__wrapper {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    
+        &__text {
+            font-size: 6.25em;
+            margin-right: 0px;
+            line-height: 1.1;
+        }
+    
+        &__link {
+            margin-top: 30px;
+            margin-bottom: 35px;
+            font-size: 0.75em;
+            padding: 19px 54px;
+
+            &::before {
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .loader {
+
+        &__wrapper {
+            padding-left: 10%;
+            background-size: 90%;
+            background-position: 100% 100%;
+            background-image: url('../img/background-eror-small.png');
+        }
+    
+        &__text {
+            font-size: 1.25em;
         }
     }
 }
